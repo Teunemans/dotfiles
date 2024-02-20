@@ -70,7 +70,7 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zoxide)
+plugins=(git colored-man-pages zoxide web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval "$(zoxide init --cmd cd zsh)"
+alias apt="\nala"
+alias dapt="\apt"
